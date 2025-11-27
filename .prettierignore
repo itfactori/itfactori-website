@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+.nuxt
+.output
+dist
+.cache
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Generated files
+.nuxt/types
+.nuxt/dist
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Public assets (images, etc.)
+public/**/*.avif
+public/**/*.jpg
+public/**/*.png
+public/**/*.svg
+public/**/*.ico
+

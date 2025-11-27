@@ -1,0 +1,12 @@
+[build]
+  command = "pnpm build"
+  publish = ".output/public"
+  # Deployments are paused - deploy manually from Netlify dashboard
+
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "10.23.0"
+
+# Disable automatic deployments
+# Set this in Netlify dashboard: Site settings > Build & deploy > Stop auto publishing
+

@@ -16,7 +16,7 @@ defineProps<{
       links: 'mt-4 flex-col justify-center items-center'
     }"
   >
-    <template #headline>
+    <!-- <template #headline>
       <Motion
         :initial="{
           scale: 1.1,
@@ -40,7 +40,7 @@ defineProps<{
           :alt="global.picture?.alt!"
         />
       </Motion>
-    </template>
+    </template> -->
 
     <template #title>
       <Motion

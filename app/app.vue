@@ -16,10 +16,8 @@ useHead({
 });
 
 useSeoMeta({
-  titleTemplate: '%s - itfactori',
-  ogImage: '/og-image.png',
-  twitterImage: '/og-image.png',
-  twitterCard: 'summary_large_image'
+  titleTemplate: '%s - ITFactori',
+  ogImage: '/og-image.png'
 });
 
 const [{ data: navigation }, { data: files }] = await Promise.all([

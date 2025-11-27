@@ -24,22 +24,22 @@ defineProps<{
           :while-in-view="{ opacity: 1, transform: 'translateY(0)' }"
           :transition="{ delay: 0.4 + 0.2 * index }"
           :in-view-options="{ once: true }"
-          class="text-muted flex items-center text-nowrap gap-2"
+          class="text-muted flex items-center flex-wrap gap-2 overflow-hidden"
         >
-          <p class="text-sm">
+          <p class="text-sm whitespace-nowrap">
             {{ experience.date }}
           </p>
-          <USeparator />
-          <ULink class="flex items-center gap-1" :to="experience.company.url" target="_blank">
-            <span class="text-sm">
+          <USeparator class="hidden sm:block" />
+          <ULink class="flex items-center gap-1 min-w-0 flex-1" :to="experience.company.url" target="_blank">
+            <span class="text-sm truncate">
               {{ experience.position }}
             </span>
             <div
-              class="inline-flex items-center gap-1"
+              class="inline-flex items-center gap-1 flex-shrink-0"
               :style="{ color: experience.company.color }"
             >
-              <span class="font-medium">{{ experience.company.name }}</span>
-              <UIcon :name="experience.company.logo" />
+              <span class="font-medium whitespace-nowrap">{{ experience.company.name }}</span>
+              <UIcon :name="experience.company.logo" class="flex-shrink-0" />
             </div>
           </ULink>
         </Motion>

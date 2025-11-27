@@ -1,7 +1,7 @@
 seo:
-  title: 'itfactori - Software Solutions Company'
-  description: 'itfactori is a software solutions company specializing in building innovative digital products and custom software solutions for businesses.'
-title: 'itfactori'
+  title: 'ITFactori - Software Solutions Company'
+  description: 'ITFactori is a software solutions company specializing in building innovative digital products and custom software solutions for businesses.'
+title: 'ITFactori'
 description: 'We build innovative software solutions that transform businesses. From web applications to custom software, we deliver technology that drives growth.'
 hero:
   links:
@@ -28,9 +28,9 @@ hero:
     - src: /hero/random-9.avif
       alt: Random Image 9
 about:
-  title: 'About itfactori'
+  title: 'About ITFactori'
   description: |
-    itfactori is a software solutions company dedicated to helping businesses thrive in the digital age. We combine technical expertise with strategic thinking to deliver custom software solutions that solve real business problems.
+    ITFactori is a software solutions company dedicated to helping businesses thrive in the digital age. We combine technical expertise with strategic thinking to deliver custom software solutions that solve real business problems.
     Our team specializes in web applications, mobile development, cloud solutions, and digital transformation services that drive measurable results.
 experience:
   title: Our Services
@@ -57,21 +57,21 @@ experience:
         url: '#'
         color: '#0078D4'
 testimonials:
-  - quote: 'itfactori transformed our business operations with their custom software solution. Their team understood our needs and delivered a platform that increased our efficiency by 50%. The attention to detail and technical expertise was outstanding.'
+  - quote: 'ITFactori transformed our business operations with their custom software solution. Their team understood our needs and delivered a platform that increased our efficiency by 50%. The attention to detail and technical expertise was outstanding.'
     author:
       name: 'Sarah Chen'
       description: 'CTO at TechCorp'
       avatar:
         src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with itfactori was seamless from start to finish. They built our web application on time and within budget. Their cloud infrastructure setup has scaled perfectly as we've grown. Highly recommend their services."
+  - quote: "Working with ITFactori was seamless from start to finish. They built our web application on time and within budget. Their cloud infrastructure setup has scaled perfectly as we've grown. Highly recommend their services."
     author:
       name: 'Michael Rodriguez'
       description: 'Founder of StartupXYZ'
       avatar:
         src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "itfactori's digital transformation services helped us modernize our entire tech stack. Their team is professional, responsive, and truly understands how to align technology with business goals. Our productivity has increased significantly."
+  - quote: "ITFactori's digital transformation services helped us modernize our entire tech stack. Their team is professional, responsive, and truly understands how to align technology with business goals. Our productivity has increased significantly."
     author:
       name: 'Dr. Aisha Johnson'
       description: 'Operations Director at Enterprise Solutions'
@@ -87,9 +87,9 @@ faq:
   categories:
     - title: Services & Solutions
       questions:
-        - label: What services does itfactori offer?
+        - label: What services does ITFactori offer?
           content: |
-            itfactori provides comprehensive software solutions including custom web and mobile application development, cloud infrastructure setup, DevOps services, digital transformation consulting, and ongoing maintenance and support. We work with businesses of all sizes to deliver technology solutions that drive growth.
+            ITFactori provides comprehensive software solutions including custom web and mobile application development, cloud infrastructure setup, DevOps services, digital transformation consulting, and ongoing maintenance and support. We work with businesses of all sizes to deliver technology solutions that drive growth.
         - label: What technologies do you work with?
           content: |
             We work with modern technology stacks including JavaScript frameworks (Vue.js, Nuxt.js, React), cloud platforms (AWS, Azure, GCP), mobile development, databases, and various backend technologies. Our team stays current with the latest tools and best practices to deliver optimal solutions.
@@ -110,9 +110,9 @@ faq:
         - label: Do you offer ongoing support and maintenance?
           content: |
             Absolutely! We offer maintenance packages, feature development, and ongoing support services. Many clients work with us on a retainer basis for continuous improvements and technical support. Let's discuss what level of support fits your needs.
-    - title: About itfactori
+    - title: About ITFactori
       questions:
-        - label: What makes itfactori different?
+        - label: What makes ITFactori different?
           content: |
             We combine technical expertise with business acumen. Our team doesn't just write code—we understand how technology can transform businesses. We focus on delivering solutions that provide real value, measurable results, and long-term success for our clients.
         - label: How can I get started?

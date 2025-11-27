@@ -30,7 +30,11 @@ defineProps<{
             {{ experience.date }}
           </p>
           <USeparator class="hidden sm:block" />
-          <ULink class="flex items-center gap-1 min-w-0 flex-1" :to="experience.company.url" target="_blank">
+          <ULink
+            class="flex items-center gap-1 min-w-0 flex-1"
+            :to="experience.company.url"
+            target="_blank"
+          >
             <span class="text-sm truncate">
               {{ experience.position }}
             </span>

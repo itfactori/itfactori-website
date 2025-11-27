@@ -1,23 +1,23 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('blog-page', () => {
-  return queryCollection('pages').path('/blog').first()
-})
+  return queryCollection('pages').path('/blog').first();
+});
 if (!page.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page not found',
     fatal: true
-  })
+  });
 }
 const { data: posts } = await useAsyncData('blogs', () =>
   queryCollection('blog').order('date', 'DESC').all()
-)
+);
 if (!posts.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'blogs posts not found',
     fatal: true
-  })
+  });
 }
 
 useSeoMeta({
@@ -25,7 +25,7 @@ useSeoMeta({
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
   ogDescription: page.value?.seo?.description || page.value?.description
-})
+});
 </script>
 
 <template>
@@ -64,9 +64,7 @@ useSeoMeta({
               image:
                 'group-hover/blog-post:scale-105 rounded-lg shadow-lg border-4 border-muted ring-2 ring-default',
               header:
-                index % 2 === 0
-                  ? 'sm:-rotate-1 overflow-visible'
-                  : 'sm:rotate-1 overflow-visible'
+                index % 2 === 0 ? 'sm:-rotate-1 overflow-visible' : 'sm:rotate-1 overflow-visible'
             }"
           />
         </Motion>

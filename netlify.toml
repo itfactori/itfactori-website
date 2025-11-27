@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = ".output/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NITRO_PRESET = "static"
+
+[build.processing]
+  skip_processing = false
+
+# Disable automatic deployments
+# Set this in Netlify dashboard: Site settings > Build & deploy > Stop auto publishing
+

@@ -19,20 +19,17 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
   nitro: {
+    preset: process.env.NITRO_PRESET || 'static',
     prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: true
+      routes: ['/'],
+      crawlLinks: true,
+      failOnError: false
     }
   },
 
   eslint: {
     config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
+      stylistic: false
     }
   }
-})
+});

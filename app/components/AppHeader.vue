@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem } from '@nuxt/ui';
 
 defineProps<{
-  links: NavigationMenuItem[]
-}>()
+  links: NavigationMenuItem[];
+}>();
 </script>
 
 <template>

@@ -1,13 +1,13 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: 'ITFactori - Software Solutions Company'
+  description: 'ITFactori is a software solutions company specializing in building innovative digital products and custom software solutions for businesses.'
+title: 'ITFactori'
+description: 'We build innovative software solutions that transform businesses. From web applications to custom software, we deliver technology that drives growth.'
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
-      color: "neutral"
+    - label: 'Get Started'
+      to: /contact
+      color: 'primary'
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
@@ -28,93 +28,93 @@ hero:
     - src: /hero/random-9.avif
       alt: Random Image 9
 about:
-  title: "About Me"
+  title: 'About ITFactori'
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    ITFactori is a software solutions company dedicated to helping businesses thrive in the digital age. We combine technical expertise with strategic thinking to deliver custom software solutions that solve real business problems.
+    Our team specializes in web applications, mobile development, cloud solutions, and digital transformation services that drive measurable results.
 experience:
-  title: Work Experience
+  title: Our Services
   items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
+    - position: 'Custom Software Development'
+      date: 'Full Stack Solutions'
       company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
+        name: Web & Mobile Apps
+        logo: 'i-simple-icons-nuxtdotjs'
+        url: '#'
+        color: '#00DC82'
+    - position: 'Cloud Solutions & DevOps'
+      date: 'Scalable Infrastructure'
       company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
+        name: Cloud Services
+        logo: 'i-simple-icons-amazonaws'
+        url: '#'
+        color: '#FF9900'
+    - position: 'Digital Transformation'
+      date: 'Business Solutions'
       company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
+        name: Enterprise Software
+        logo: 'i-simple-icons-microsoft'
+        url: '#'
+        color: '#0078D4'
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: 'ITFactori transformed our business operations with their custom software solution. Their team understood our needs and delivered a platform that increased our efficiency by 50%. The attention to detail and technical expertise was outstanding.'
     author:
       name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
+      description: 'CTO at TechCorp'
       avatar:
         src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
+  - quote: "Working with ITFactori was seamless from start to finish. They built our web application on time and within budget. Their cloud infrastructure setup has scaled perfectly as we've grown. Highly recommend their services."
     author:
       name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
+      description: 'Founder of StartupXYZ'
       avatar:
         src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+  - quote: "ITFactori's digital transformation services helped us modernize our entire tech stack. Their team is professional, responsive, and truly understands how to align technology with business goals. Our productivity has increased significantly."
     author:
       name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
+      description: 'Operations Director at Enterprise Solutions'
       avatar:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
+  title: 'Latest Articles'
+  description: 'Insights on software development and technology'
 faq:
   title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  description: Answers to common questions about our services and process.
   categories:
-    - title: Services & Process
+    - title: Services & Solutions
       questions:
-        - label: What services do you offer?
+        - label: What services does ITFactori offer?
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            ITFactori provides comprehensive software solutions including custom web and mobile application development, cloud infrastructure setup, DevOps services, digital transformation consulting, and ongoing maintenance and support. We work with businesses of all sizes to deliver technology solutions that drive growth.
+        - label: What technologies do you work with?
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
+            We work with modern technology stacks including JavaScript frameworks (Vue.js, Nuxt.js, React), cloud platforms (AWS, Azure, GCP), mobile development, databases, and various backend technologies. Our team stays current with the latest tools and best practices to deliver optimal solutions.
+        - label: Do you work with startups and enterprises?
           content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            Yes! We work with businesses of all sizes, from startups launching their first product to enterprises looking to modernize their technology infrastructure. We tailor our approach to fit each client's unique needs, timeline, and budget.
+    - title: Project Process
       questions:
-        - label: How much does a project typically cost?
+        - label: How do you approach new projects?
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
+            We start with a discovery phase to understand your business needs, goals, and technical requirements. Then we create a detailed project plan with timelines and milestones. Our process is collaborative, transparent, and focused on delivering value at every stage.
         - label: What are your payment terms?
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
+            Payment terms vary by project size and scope. Typically, we require a deposit to begin work, with payments structured around project milestones. We're flexible and can work with your preferred payment schedule. Contact us to discuss your specific project needs.
         - label: How long does a typical project take?
           content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
+            Project timelines depend on scope and complexity. Simple web applications might take 4-8 weeks, while comprehensive enterprise solutions can take 3-6 months. We provide detailed timeline estimates after understanding your requirements and always keep you informed of progress.
+        - label: Do you offer ongoing support and maintenance?
           content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
+            Absolutely! We offer maintenance packages, feature development, and ongoing support services. Many clients work with us on a retainer basis for continuous improvements and technical support. Let's discuss what level of support fits your needs.
+    - title: About ITFactori
       questions:
-        - label: What do you enjoy most about your work?
+        - label: What makes ITFactori different?
           content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
+            We combine technical expertise with business acumen. Our team doesn't just write code—we understand how technology can transform businesses. We focus on delivering solutions that provide real value, measurable results, and long-term success for our clients.
+        - label: How can I get started?
           content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            Reach out to us through our contact form or email. We'll schedule a consultation to discuss your project, answer your questions, and provide a detailed proposal. We're here to help turn your ideas into reality.

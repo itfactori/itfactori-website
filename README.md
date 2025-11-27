@@ -9,7 +9,7 @@ Built with [Nuxt](https://nuxt.com) and [Nuxt UI](https://ui.nuxt.com).
 Make sure to install the dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ## Development Server
@@ -17,7 +17,7 @@ pnpm install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 ## Production
@@ -25,13 +25,13 @@ pnpm dev
 Build the application for production:
 
 ```bash
-pnpm build
+npm run build
 ```
 
 Locally preview production build:
 
 ```bash
-pnpm preview
+npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
@@ -48,7 +48,7 @@ Make sure your code is pushed to a GitHub repository.
 2. Click "Add new site" → "Import an existing project"
 3. Connect your GitHub account and select your repository
 4. Netlify will automatically detect the build settings from `netlify.toml`:
-   - Build command: `pnpm build`
+   - Build command: `npm run build`
    - Publish directory: `.output/public`
 5. Click "Deploy site"
 

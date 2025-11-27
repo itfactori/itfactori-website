@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import type { IndexCollectionItem } from '@nuxt/content'
+import type { IndexCollectionItem } from '@nuxt/content';
 
 defineProps<{
-  page: IndexCollectionItem
-}>()
+  page: IndexCollectionItem;
+}>();
 </script>
 
 <template>
@@ -30,11 +30,7 @@ defineProps<{
             {{ experience.date }}
           </p>
           <USeparator />
-          <ULink
-            class="flex items-center gap-1"
-            :to="experience.company.url"
-            target="_blank"
-          >
+          <ULink class="flex items-center gap-1" :to="experience.company.url" target="_blank">
             <span class="text-sm">
               {{ experience.position }}
             </span>
@@ -52,6 +48,4 @@ defineProps<{
   </UPageSection>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

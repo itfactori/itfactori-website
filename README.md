@@ -41,9 +41,11 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 This project is configured for deployment on Netlify. Follow these steps:
 
 ### 1. Push to GitHub
+
 Make sure your code is pushed to a GitHub repository.
 
 ### 2. Connect to Netlify
+
 1. Go to [Netlify](https://www.netlify.com/) and sign in
 2. Click "Add new site" → "Import an existing project"
 3. Connect your GitHub account and select your repository
@@ -53,6 +55,7 @@ Make sure your code is pushed to a GitHub repository.
 5. Click "Deploy site"
 
 ### 3. Connect Your GoDaddy Domain
+
 1. In your Netlify site dashboard, go to **Site settings** → **Domain management**
 2. Click **Add custom domain**
 3. Enter your domain name (e.g., `itfactori.com`)
@@ -67,7 +70,9 @@ Make sure your code is pushed to a GitHub repository.
 6. Netlify will automatically provision an SSL certificate via Let's Encrypt
 
 ### 4. Environment Variables (if needed)
+
 If your app requires environment variables:
+
 1. Go to **Site settings** → **Environment variables**
 2. Add any required variables
 3. Redeploy your site

@@ -1,13 +1,13 @@
 seo:
-  title: "itfactori - Software Solutions Company"
-  description: "itfactori is a software solutions company specializing in building innovative digital products and custom software solutions for businesses."
-title: "itfactori"
-description: "We build innovative software solutions that transform businesses. From web applications to custom software, we deliver technology that drives growth."
+  title: 'itfactori - Software Solutions Company'
+  description: 'itfactori is a software solutions company specializing in building innovative digital products and custom software solutions for businesses.'
+title: 'itfactori'
+description: 'We build innovative software solutions that transform businesses. From web applications to custom software, we deliver technology that drives growth.'
 hero:
   links:
-    - label: "Get Started"
+    - label: 'Get Started'
       to: /contact
-      color: "primary"
+      color: 'primary'
   images:
     - src: /hero/random-1.avif
       alt: Random Image 1
@@ -28,36 +28,36 @@ hero:
     - src: /hero/random-9.avif
       alt: Random Image 9
 about:
-  title: "About itfactori"
+  title: 'About itfactori'
   description: |
     itfactori is a software solutions company dedicated to helping businesses thrive in the digital age. We combine technical expertise with strategic thinking to deliver custom software solutions that solve real business problems.
     Our team specializes in web applications, mobile development, cloud solutions, and digital transformation services that drive measurable results.
 experience:
   title: Our Services
   items:
-    - position: "Custom Software Development"
-      date: "Full Stack Solutions"
+    - position: 'Custom Software Development'
+      date: 'Full Stack Solutions'
       company:
         name: Web & Mobile Apps
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "#"
-        color: "#00DC82"
-    - position: "Cloud Solutions & DevOps"
-      date: "Scalable Infrastructure"
+        logo: 'i-simple-icons-nuxtdotjs'
+        url: '#'
+        color: '#00DC82'
+    - position: 'Cloud Solutions & DevOps'
+      date: 'Scalable Infrastructure'
       company:
         name: Cloud Services
-        logo: "i-simple-icons-amazonaws"
-        url: "#"
-        color: "#FF9900"
-    - position: "Digital Transformation"
-      date: "Business Solutions"
+        logo: 'i-simple-icons-amazonaws'
+        url: '#'
+        color: '#FF9900'
+    - position: 'Digital Transformation'
+      date: 'Business Solutions'
       company:
         name: Enterprise Software
-        logo: "i-simple-icons-microsoft"
-        url: "#"
-        color: "#0078D4"
+        logo: 'i-simple-icons-microsoft'
+        url: '#'
+        color: '#0078D4'
 testimonials:
-  - quote: "itfactori transformed our business operations with their custom software solution. Their team understood our needs and delivered a platform that increased our efficiency by 50%. The attention to detail and technical expertise was outstanding."
+  - quote: 'itfactori transformed our business operations with their custom software solution. Their team understood our needs and delivered a platform that increased our efficiency by 50%. The attention to detail and technical expertise was outstanding.'
     author:
       name: 'Sarah Chen'
       description: 'CTO at TechCorp'
@@ -79,8 +79,8 @@ testimonials:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 blog:
-  title: "Latest Articles"
-  description: "Insights on software development and technology"
+  title: 'Latest Articles'
+  description: 'Insights on software development and technology'
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about our services and process.

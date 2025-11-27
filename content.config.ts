@@ -1,38 +1,43 @@
-import { defineCollection, defineContentConfig, z } from '@nuxt/content'
+import { defineCollection, defineContentConfig, z } from '@nuxt/content';
 
-const createBaseSchema = () => z.object({
-  title: z.string(),
-  description: z.string()
-})
+const createBaseSchema = () =>
+  z.object({
+    title: z.string(),
+    description: z.string()
+  });
 
-const createButtonSchema = () => z.object({
-  label: z.string(),
-  icon: z.string().optional(),
-  to: z.string().optional(),
-  color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
-  size: z.enum(['xs', 'sm', 'md', 'lg', 'xl']).optional(),
-  variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link']).optional(),
-  target: z.enum(['_blank', '_self']).optional()
-})
+const createButtonSchema = () =>
+  z.object({
+    label: z.string(),
+    icon: z.string().optional(),
+    to: z.string().optional(),
+    color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
+    size: z.enum(['xs', 'sm', 'md', 'lg', 'xl']).optional(),
+    variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link']).optional(),
+    target: z.enum(['_blank', '_self']).optional()
+  });
 
-const createImageSchema = () => z.object({
-  src: z.string().editor({ input: 'media' }),
-  alt: z.string()
-})
+const createImageSchema = () =>
+  z.object({
+    src: z.string().editor({ input: 'media' }),
+    alt: z.string()
+  });
 
-const createAuthorSchema = () => z.object({
-  name: z.string(),
-  description: z.string().optional(),
-  username: z.string().optional(),
-  twitter: z.string().optional(),
-  to: z.string().optional(),
-  avatar: createImageSchema().optional()
-})
+const createAuthorSchema = () =>
+  z.object({
+    name: z.string(),
+    description: z.string().optional(),
+    username: z.string().optional(),
+    twitter: z.string().optional(),
+    to: z.string().optional(),
+    avatar: createImageSchema().optional()
+  });
 
-const createTestimonialSchema = () => z.object({
-  quote: z.string(),
-  author: createAuthorSchema()
-})
+const createTestimonialSchema = () =>
+  z.object({
+    quote: z.string(),
+    author: createAuthorSchema()
+  });
 
 export default defineContentConfig({
   collections: {
@@ -46,16 +51,18 @@ export default defineContentConfig({
         }),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
-          items: z.array(z.object({
-            date: z.date(),
-            position: z.string(),
-            company: z.object({
-              name: z.string(),
-              url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
+          items: z.array(
+            z.object({
+              date: z.date(),
+              position: z.string(),
+              company: z.object({
+                name: z.string(),
+                url: z.string(),
+                logo: z.string().editor({ input: 'icon' }),
+                color: z.string()
+              })
             })
-          }))
+          )
         }),
         testimonials: z.array(createTestimonialSchema()),
         blog: createBaseSchema(),
@@ -69,7 +76,8 @@ export default defineContentConfig({
                   content: z.string().nonempty()
                 })
               )
-            }))
+            })
+          )
         })
       })
     }),
@@ -97,10 +105,7 @@ export default defineContentConfig({
     }),
     pages: defineCollection({
       type: 'page',
-      source: [
-        { include: 'projects.yml' },
-        { include: 'blog.yml' }
-      ],
+      source: [{ include: 'projects.yml' }, { include: 'blog.yml' }],
       schema: z.object({
         links: z.array(createButtonSchema())
       })
@@ -110,13 +115,15 @@ export default defineContentConfig({
       source: 'speaking.yml',
       schema: z.object({
         links: z.array(createButtonSchema()),
-        events: z.array(z.object({
-          category: z.enum(['Live talk', 'Podcast', 'Conference']),
-          title: z.string(),
-          date: z.date(),
-          location: z.string(),
-          url: z.string().optional()
-        }))
+        events: z.array(
+          z.object({
+            category: z.enum(['Live talk', 'Podcast', 'Conference']),
+            title: z.string(),
+            date: z.date(),
+            location: z.string(),
+            url: z.string().optional()
+          })
+        )
       })
     }),
     about: defineCollection({
@@ -128,4 +135,4 @@ export default defineContentConfig({
       })
     })
   }
-})
+});

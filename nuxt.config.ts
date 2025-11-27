@@ -21,9 +21,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: process.env.NITRO_PRESET || 'static',
     prerender: {
-      routes: [
-        '/'
-      ],
+      routes: ['/'],
       crawlLinks: true,
       failOnError: false
     }
@@ -37,4 +35,4 @@ export default defineNuxtConfig({
       }
     }
   }
-})
+});

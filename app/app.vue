@@ -18,9 +18,9 @@ useHead({
 })
 
 useSeoMeta({
-  titleTemplate: '%s - Nuxt Portfolio Template',
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/portfolio-light.png',
+  titleTemplate: '%s - itfactori',
+  ogImage: '/og-image.png',
+  twitterImage: '/og-image.png',
   twitterCard: 'summary_large_image'
 })
 

@@ -1,0 +1,3 @@
+[submodule "itfactori-commons"]
+	path = itfactori-commons
+	url = git@github.com:itfactori/itfactori-commons.git

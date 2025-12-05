@@ -347,7 +347,7 @@ async function handleSubmit() {
                         <UCheckbox
                           :model-value="form.services.includes(service.value)"
                           @update:model-value="
-                            (checked) => {
+                            checked => {
                               if (checked === true) {
                                 form.services.push(service.value);
                               } else {

@@ -30,7 +30,9 @@ defineProps<{
           :animate="{ opacity: 1, y: 0 }"
           :transition="{ duration: 0.5, delay: 0.1 }"
         >
-          <h1 class="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+          <h1
+            class="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight"
+          >
             {{ page.title }}
           </h1>
         </Motion>

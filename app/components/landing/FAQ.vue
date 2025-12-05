@@ -6,9 +6,11 @@ const props = defineProps<{
 }>();
 
 const allQuestions = computed(() => {
-  return props.page.faq?.categories.flatMap(category =>
-    category.questions.map(q => ({ ...q, category: category.title }))
-  ) || [];
+  return (
+    props.page.faq?.categories.flatMap(category =>
+      category.questions.map(q => ({ ...q, category: category.title }))
+    ) || []
+  );
 });
 </script>
 
@@ -24,9 +26,7 @@ const allQuestions = computed(() => {
             :transition="{ duration: 0.5 }"
             :in-view-options="{ once: true }"
           >
-            <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">
-              FAQ
-            </p>
+            <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">FAQ</p>
           </Motion>
           <Motion
             :initial="{ opacity: 0, y: 20 }"

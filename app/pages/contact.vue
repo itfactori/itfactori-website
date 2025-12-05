@@ -4,8 +4,8 @@ const { global } = useAppConfig();
 useSeoMeta({
   title: 'Contact Us',
   ogTitle: 'Contact Us - ITFactori',
-  description: 'Get in touch with ITFactori. Let\'s discuss your next software project.',
-  ogDescription: 'Get in touch with ITFactori. Let\'s discuss your next software project.'
+  description: "Get in touch with ITFactori. Let's discuss your next software project.",
+  ogDescription: "Get in touch with ITFactori. Let's discuss your next software project."
 });
 
 // Form state
@@ -99,9 +99,7 @@ async function handleSubmit() {
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.5 }"
           >
-            <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">
-              Contact
-            </p>
+            <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">Contact</p>
           </Motion>
           <Motion
             :initial="{ opacity: 0, y: 20 }"
@@ -118,7 +116,8 @@ async function handleSubmit() {
             :transition="{ duration: 0.5, delay: 0.2 }"
           >
             <p class="mt-6 text-lg text-muted">
-              Have a project in mind? We'd love to hear about it. Fill out the form below and let's discuss how we can help.
+              Have a project in mind? We'd love to hear about it. Fill out the form below and let's
+              discuss how we can help.
             </p>
           </Motion>
         </div>
@@ -202,7 +201,11 @@ async function handleSubmit() {
                   <div>
                     <h3 class="font-mono font-semibold mb-1">Availability</h3>
                     <p class="text-muted">
-                      {{ global.available ? 'Currently accepting new projects' : 'Currently at capacity' }}
+                      {{
+                        global.available
+                          ? 'Currently accepting new projects'
+                          : 'Currently at capacity'
+                      }}
                     </p>
                   </div>
                 </div>
@@ -219,7 +222,10 @@ async function handleSubmit() {
               :in-view-options="{ once: true }"
             >
               <!-- Success Message -->
-              <div v-if="submitSuccess" class="border border-emerald-500 bg-emerald-500/10 p-8 text-center">
+              <div
+                v-if="submitSuccess"
+                class="border border-emerald-500 bg-emerald-500/10 p-8 text-center"
+              >
                 <UIcon name="i-lucide-check-circle" class="size-12 text-emerald-500 mx-auto mb-4" />
                 <h3 class="font-mono text-xl font-semibold mb-2">Thank You!</h3>
                 <p class="text-muted mb-6">
@@ -235,7 +241,10 @@ async function handleSubmit() {
                 <h3 class="font-mono text-xl font-semibold mb-8">Project Inquiry</h3>
 
                 <!-- Error Message -->
-                <div v-if="submitError" class="mb-6 p-4 border border-red-500 bg-red-500/10 text-red-500 text-sm">
+                <div
+                  v-if="submitError"
+                  class="mb-6 p-4 border border-red-500 bg-red-500/10 text-red-500 text-sm"
+                >
                   {{ submitError }}
                 </div>
 
@@ -331,17 +340,21 @@ async function handleSubmit() {
                         v-for="service in serviceOptions"
                         :key="service.value"
                         class="flex items-center gap-3 p-3 border border-default hover:border-foreground transition-colors cursor-pointer"
-                        :class="{ 'border-primary bg-primary/5': form.services.includes(service.value) }"
+                        :class="{
+                          'border-primary bg-primary/5': form.services.includes(service.value)
+                        }"
                       >
                         <UCheckbox
                           :model-value="form.services.includes(service.value)"
-                          @update:model-value="(checked: boolean) => {
-                            if (checked) {
-                              form.services.push(service.value);
-                            } else {
-                              form.services = form.services.filter(s => s !== service.value);
+                          @update:model-value="
+                            (checked) => {
+                              if (checked === true) {
+                                form.services.push(service.value);
+                              } else {
+                                form.services = form.services.filter(s => s !== service.value);
+                              }
                             }
-                          }"
+                          "
                         />
                         <span class="text-sm">{{ service.label }}</span>
                       </label>

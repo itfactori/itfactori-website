@@ -17,9 +17,7 @@ defineProps<{
           :transition="{ duration: 0.5 }"
           :in-view-options="{ once: true }"
         >
-          <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">
-            Testimonials
-          </p>
+          <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">Testimonials</p>
         </Motion>
         <Motion
           :initial="{ opacity: 0, y: 20 }"
@@ -57,8 +55,13 @@ defineProps<{
               :alt="testimonial.author.name"
               class="size-12 object-cover border border-default"
             />
-            <div v-else class="size-12 bg-muted border border-default flex items-center justify-center">
-              <span class="font-mono text-sm text-muted">{{ testimonial.author.name.charAt(0) }}</span>
+            <div
+              v-else
+              class="size-12 bg-muted border border-default flex items-center justify-center"
+            >
+              <span class="font-mono text-sm text-muted">{{
+                testimonial.author.name.charAt(0)
+              }}</span>
             </div>
             <div>
               <p class="font-mono font-semibold text-sm">{{ testimonial.author.name }}</p>

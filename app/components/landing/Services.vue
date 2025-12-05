@@ -17,19 +17,22 @@ const services = [
   {
     icon: appDevIcon,
     title: 'Mobile Development',
-    description: 'Native and cross-platform mobile applications built with Flutter, React Native, and native iOS/Android.',
+    description:
+      'Native and cross-platform mobile applications built with Flutter, React Native, and native iOS/Android.',
     technologies: ['Flutter', 'React Native', 'Kotlin', 'Swift']
   },
   {
     icon: webIcon,
     title: 'Web Development',
-    description: 'Modern, responsive web applications using cutting-edge frameworks and best practices.',
+    description:
+      'Modern, responsive web applications using cutting-edge frameworks and best practices.',
     technologies: ['Vue.js', 'Nuxt', 'React', 'Next.js']
   },
   {
     icon: backendIcon,
     title: 'Backend Systems',
-    description: 'Scalable, secure backend architectures with RESTful APIs and real-time capabilities.',
+    description:
+      'Scalable, secure backend architectures with RESTful APIs and real-time capabilities.',
     technologies: ['Node.js', 'NestJS', 'Go', 'PostgreSQL']
   },
   {
@@ -64,9 +67,7 @@ const services = [
           :transition="{ duration: 0.5 }"
           :in-view-options="{ once: true }"
         >
-          <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">
-            What We Do
-          </p>
+          <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">What We Do</p>
         </Motion>
         <Motion
           :initial="{ opacity: 0, y: 20 }"
@@ -91,7 +92,9 @@ const services = [
       </div>
 
       <!-- Services Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-default border border-default">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-default border border-default"
+      >
         <Motion
           v-for="(service, index) in services"
           :key="service.title"

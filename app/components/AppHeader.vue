@@ -31,12 +31,7 @@ defineProps<{
         <!-- Right side -->
         <div class="flex items-center gap-2">
           <ColorModeButton />
-          <UButton
-            to="/contact"
-            variant="solid"
-            size="sm"
-            class="hidden sm:inline-flex"
-          >
+          <UButton to="/contact" variant="solid" size="sm" class="hidden sm:inline-flex">
             Get in Touch
           </UButton>
         </div>

@@ -35,9 +35,7 @@ useSeoMeta({
             :animate="{ opacity: 1, y: 0 }"
             :transition="{ duration: 0.5 }"
           >
-            <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">
-              Our Work
-            </p>
+            <p class="font-mono text-sm text-primary uppercase tracking-widest mb-4">Our Work</p>
           </Motion>
           <Motion
             :initial="{ opacity: 0, y: 20 }"
@@ -119,7 +117,9 @@ useSeoMeta({
                 </p>
 
                 <!-- Title -->
-                <h2 class="font-mono text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                <h2
+                  class="font-mono text-xl font-semibold mb-3 group-hover:text-primary transition-colors"
+                >
                   {{ project.title }}
                 </h2>
 
@@ -174,13 +174,7 @@ useSeoMeta({
           :transition="{ duration: 0.5, delay: 0.2 }"
           :in-view-options="{ once: true }"
         >
-          <UButton
-            to="/contact"
-            size="lg"
-            class="font-mono"
-          >
-            Start a Conversation
-          </UButton>
+          <UButton to="/contact" size="lg" class="font-mono"> Start a Conversation </UButton>
         </Motion>
       </div>
     </section>

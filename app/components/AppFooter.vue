@@ -12,8 +12,8 @@ const { footer, global } = useAppConfig();
             <span class="font-mono text-xl font-bold tracking-tight">ITFactori</span>
           </NuxtLink>
           <p class="mt-4 text-sm text-muted max-w-md">
-            End-to-end software solutions. From mobile apps to cloud infrastructure,
-            we build systems that scale.
+            End-to-end software solutions. From mobile apps to cloud infrastructure, we build
+            systems that scale.
           </p>
         </div>
 
@@ -22,13 +22,23 @@ const { footer, global } = useAppConfig();
           <h3 class="font-mono text-sm font-semibold uppercase tracking-wider mb-4">Navigation</h3>
           <ul class="space-y-2">
             <li>
-              <NuxtLink to="/" class="text-sm text-muted hover:text-foreground transition-colors">Home</NuxtLink>
+              <NuxtLink to="/" class="text-sm text-muted hover:text-foreground transition-colors"
+                >Home</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink to="/projects" class="text-sm text-muted hover:text-foreground transition-colors">Projects</NuxtLink>
+              <NuxtLink
+                to="/projects"
+                class="text-sm text-muted hover:text-foreground transition-colors"
+                >Projects</NuxtLink
+              >
             </li>
             <li>
-              <NuxtLink to="/contact" class="text-sm text-muted hover:text-foreground transition-colors">Contact</NuxtLink>
+              <NuxtLink
+                to="/contact"
+                class="text-sm text-muted hover:text-foreground transition-colors"
+                >Contact</NuxtLink
+              >
             </li>
           </ul>
         </div>
@@ -38,7 +48,10 @@ const { footer, global } = useAppConfig();
           <h3 class="font-mono text-sm font-semibold uppercase tracking-wider mb-4">Contact</h3>
           <ul class="space-y-2">
             <li>
-              <a :href="`mailto:${global.email}`" class="text-sm text-muted hover:text-foreground transition-colors">
+              <a
+                :href="`mailto:${global.email}`"
+                class="text-sm text-muted hover:text-foreground transition-colors"
+              >
                 {{ global.email }}
               </a>
             </li>
@@ -61,13 +74,13 @@ const { footer, global } = useAppConfig();
       </div>
 
       <!-- Bottom bar -->
-      <div class="mt-12 pt-8 border-t border-default flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div
+        class="mt-12 pt-8 border-t border-default flex flex-col sm:flex-row justify-between items-center gap-4"
+      >
         <p class="text-xs text-muted">
           {{ footer.credits }}
         </p>
-        <p class="text-xs text-muted font-mono">
-          Built with precision.
-        </p>
+        <p class="text-xs text-muted font-mono">Built with precision.</p>
       </div>
     </div>
   </footer>

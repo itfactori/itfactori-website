@@ -1,25 +1,68 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      light:
-        'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      alt: 'ITFactori logo'
+      dark: '/logo-dark.svg',
+      light: '/logo-light.svg',
+      alt: 'ITFactori'
     },
     meetingLink: '/contact',
-    email: 'hello@itfactori.com',
+    email: 'itfactori@itfactori.com',
     available: true
   },
   ui: {
     colors: {
       primary: 'blue',
-      neutral: 'neutral'
+      neutral: 'zinc'
     },
+    // Global component overrides for Neo-Brutalist theme
+    button: {
+      slots: {
+        base: 'rounded-sm'
+      },
+      defaultVariants: {
+        size: 'md'
+      }
+    },
+    card: {
+      slots: {
+        root: 'rounded-none border border-default shadow-none'
+      }
+    },
+    input: {
+      slots: {
+        root: 'rounded-sm'
+      }
+    },
+    badge: {
+      slots: {
+        base: 'rounded-sm font-mono text-xs'
+      }
+    },
+    // Page components
     pageHero: {
       slots: {
-        container: 'py-18 sm:py-24 lg:py-32',
-        title: 'mx-auto max-w-xl text-pretty text-3xl sm:text-4xl lg:text-5xl',
-        description: 'mt-2 text-md mx-auto max-w-2xl text-pretty sm:text-md text-muted'
+        container: 'py-24 sm:py-32 lg:py-40',
+        title:
+          'font-mono mx-auto max-w-4xl text-pretty text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight',
+        description: 'mt-6 text-lg mx-auto max-w-2xl text-pretty text-muted'
+      }
+    },
+    pageSection: {
+      slots: {
+        container: 'py-16 sm:py-24',
+        title: 'font-mono text-2xl sm:text-3xl font-semibold tracking-tight',
+        description: 'mt-2 text-muted'
+      }
+    },
+    pageCard: {
+      slots: {
+        root: 'rounded-none border border-default shadow-none hover:border-foreground transition-colors'
+      }
+    },
+    // Navigation
+    navigationMenu: {
+      slots: {
+        root: 'rounded-none'
       }
     }
   },
@@ -38,6 +81,12 @@ export default defineAppConfig({
         to: 'https://github.com/itfactori',
         target: '_blank',
         'aria-label': 'ITFactori on GitHub'
+      },
+      {
+        icon: 'i-simple-icons-x',
+        to: 'https://x.com/itfactori',
+        target: '_blank',
+        'aria-label': 'ITFactori on X'
       }
     ]
   }

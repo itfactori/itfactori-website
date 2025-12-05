@@ -1,11 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <UContainer class="sm:border-x border-default pt-10">
-      <AppHeader :links="navLinks" />
+  <div class="min-h-screen flex flex-col bg-default">
+    <AppHeader :links="navLinks" />
+    <!-- Main content with top padding for fixed header -->
+    <main class="flex-1 pt-16">
       <slot />
-      <AppFooter />
-    </UContainer>
+    </main>
+    <AppFooter />
   </div>
 </template>

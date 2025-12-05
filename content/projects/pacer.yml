@@ -1,0 +1,6 @@
+title: Pacer
+description: A step-tracking app that tracks steps with precision, keeping users motivated to achieve daily activity goals. Features real-time weather updates, accurate address details and navigation, calorie tracking, distance measurement, and speed monitoring — all in a sleek, user-friendly design.
+image: https://skkillo-prod-s3.s3.ap-southeast-1.amazonaws.com/admin/pacer.jpeg
+url: '#'
+tags: ['Flutter', 'Mobile App', 'Health & Fitness']
+date: '2023'

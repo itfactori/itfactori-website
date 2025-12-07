@@ -6,7 +6,7 @@ export default defineAppConfig({
       alt: 'ITFactori'
     },
     meetingLink: '/contact',
-    email: 'itfactori@itfactori.com',
+    email: 'Itfactori1278@gmail.com',
     available: true
   },
   ui: {

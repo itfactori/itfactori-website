@@ -25,7 +25,6 @@ const submitSuccess = ref(false);
 const submitError = ref('');
 
 const regions = [
-  { label: 'Please Select', value: '' },
   { label: 'Middle East & North Africa', value: 'mena' },
   { label: 'USA', value: 'usa' },
   { label: 'Canada', value: 'canada' },
@@ -58,6 +57,15 @@ const isFormValid = computed(() => {
     form.projectDetails.trim() !== ''
   );
 });
+
+function toggleService(value: string) {
+  const index = form.services.indexOf(value);
+  if (index === -1) {
+    form.services.push(value);
+  } else {
+    form.services.splice(index, 1);
+  }
+}
 
 async function handleSubmit() {
   if (!isFormValid.value) return;
@@ -324,6 +332,8 @@ async function handleSubmit() {
                       <USelect
                         v-model="form.region"
                         :items="regions"
+                        value-key="value"
+                        placeholder="Please Select"
                         size="lg"
                         :ui="{ base: 'font-mono' }"
                       />
@@ -343,18 +353,10 @@ async function handleSubmit() {
                         :class="{
                           'border-primary bg-primary/5': form.services.includes(service.value)
                         }"
+                        @click.prevent="toggleService(service.value)"
                       >
                         <UCheckbox
                           :model-value="form.services.includes(service.value)"
-                          @update:model-value="
-                            checked => {
-                              if (checked === true) {
-                                form.services.push(service.value);
-                              } else {
-                                form.services = form.services.filter(s => s !== service.value);
-                              }
-                            }
-                          "
                         />
                         <span class="text-sm">{{ service.label }}</span>
                       </label>

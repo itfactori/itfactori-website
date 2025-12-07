@@ -1,0 +1,39 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#ffffffff">
+    <path d="
+      M 20,40
+      H 280
+      L 250,80
+      H 180
+      V 130
+      L 140,142
+      V 80
+      H 130
+      V 145
+      L 90,157
+      V 80
+      H 50
+      L 20,40
+      Z"
+    />
+
+    <path d="
+      M 90,169
+      L 130,157
+      V 220
+      L 90,240
+      Z"
+    />
+
+    <path d="
+      M 140,154
+      L 180,142
+      L 240,142
+      L 210,180
+      H 180
+      V 250
+      L 140,270
+      Z"
+    />
+  </g>
+</svg>

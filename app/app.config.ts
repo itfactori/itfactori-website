@@ -81,12 +81,6 @@ export default defineAppConfig({
         to: 'https://github.com/itfactori',
         target: '_blank',
         'aria-label': 'ITFactori on GitHub'
-      },
-      {
-        icon: 'i-simple-icons-x',
-        to: 'https://x.com/itfactori',
-        target: '_blank',
-        'aria-label': 'ITFactori on X'
       }
     ]
   }

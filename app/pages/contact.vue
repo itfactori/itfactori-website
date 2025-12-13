@@ -355,9 +355,7 @@ async function handleSubmit() {
                         }"
                         @click.prevent="toggleService(service.value)"
                       >
-                        <UCheckbox
-                          :model-value="form.services.includes(service.value)"
-                        />
+                        <UCheckbox :model-value="form.services.includes(service.value)" />
                         <span class="text-sm">{{ service.label }}</span>
                       </label>
                     </div>

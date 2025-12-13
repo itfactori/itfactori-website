@@ -7,20 +7,35 @@ defineProps<{
 </script>
 
 <template>
-  <div class="fixed top-2 sm:top-4 mx-auto left-1/2 transform -translate-x-1/2 z-10">
-    <UNavigationMenu
-      :items="links"
-      variant="link"
-      color="neutral"
-      class="bg-muted/80 backdrop-blur-sm rounded-full px-2 sm:px-4 border border-muted/50 shadow-lg shadow-neutral-950/5"
-      :ui="{
-        link: 'px-2 py-1',
-        linkLeadingIcon: 'hidden'
-      }"
-    >
-      <template #list-trailing>
-        <ColorModeButton />
-      </template>
-    </UNavigationMenu>
-  </div>
+  <header class="fixed top-0 left-0 right-0 z-50 bg-default border-b border-default">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <NuxtLink to="/" class="flex items-center gap-2">
+          <span class="font-mono text-lg font-bold tracking-tight">ITFactori</span>
+        </NuxtLink>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex items-center gap-1">
+          <NuxtLink
+            v-for="(link, index) in links"
+            :key="index"
+            :to="link.to"
+            class="px-4 py-2 text-sm font-medium text-muted hover:text-foreground transition-colors"
+            active-class="text-foreground"
+          >
+            {{ link.label }}
+          </NuxtLink>
+        </nav>
+
+        <!-- Right side -->
+        <div class="flex items-center gap-2">
+          <ColorModeButton />
+          <UButton to="/contact" variant="solid" size="sm" class="hidden sm:inline-flex">
+            Get in Touch
+          </UButton>
+        </div>
+      </div>
+    </div>
+  </header>
 </template>

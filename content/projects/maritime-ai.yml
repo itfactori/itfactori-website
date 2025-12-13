@@ -1,0 +1,6 @@
+title: Maritime AI Agent
+description: E2E agentic AI solution for maritime brokerage and chartering. Automated domain-specific workflows using LangGraph for agentic orchestration and Langfuse for prompt management, versioning, and observability.
+image: https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+url: '#'
+tags: ['Python', 'LangGraph', 'LangChain', 'AI Agents', 'Langfuse']
+date: '2025'

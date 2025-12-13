@@ -1,0 +1,6 @@
+title: Momix Squad
+description: A web-based community platform and resource hub designed for mothers, built with Nuxt.js and Tailwind CSS. Features Mom Development guides for every parenting stage, self-care resources, nutrition guidance, and access to experienced Mom Coaches. Empowers mothers with expert insights, downloadable planners, and a supportive community.
+image: https://images.unsplash.com/photo-1476703993599-0035a21b17a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80
+url: 'https://momixsquad.com/home/'
+tags: ['Nuxt.js', 'Vue.js', 'Tailwind CSS', 'Community Platform']
+date: '2025'

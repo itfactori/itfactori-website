@@ -10,6 +10,12 @@ export default defineNuxtConfig({
     'motion-v/nuxt'
   ],
 
+  app: {
+    head: {
+      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
+    }
+  },
+
   devtools: {
     enabled: true
   },

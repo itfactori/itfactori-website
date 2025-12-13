@@ -40,27 +40,48 @@ experience:
         url: '#'
         color: '#0078D4'
 testimonials:
-  - quote: 'ITFactori transformed our business operations with their custom software solution. Their team understood our needs and delivered a platform that increased our efficiency by 50%. The attention to detail and technical expertise was outstanding.'
+  - quote: 'ITFactori brought our vision for BritaliansTV to life. They built a Netflix-style streaming platform for Android TV with flawless navigation and beautiful UI. The way they organized our content library with series, seasons, and episodes exceeded our expectations. Our viewers love the seamless experience.'
     author:
-      name: 'Sarah Chen'
-      description: 'CTO at TechCorp'
-      avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with ITFactori was seamless from start to finish. They built our web application on time and within budget. Their cloud infrastructure setup has scaled perfectly as we've grown. Highly recommend their services."
-    author:
-      name: 'Michael Rodriguez'
-      description: 'Founder of StartupXYZ'
+      name: 'Marco Bianchi'
+      description: 'Founder & CEO, BritaliansTV'
       avatar:
         src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "ITFactori's digital transformation services helped us modernize our entire tech stack. Their team is professional, responsive, and truly understands how to align technology with business goals. Our productivity has increased significantly."
+  - quote: "The Maritime AI Agent they developed transformed how we handle chartering workflows. The agentic AI solution automated our most complex processes. ITFactori's expertise with LangGraph and their understanding of maritime operations made this project a huge success. Game changer for our brokerage."
     author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Operations Director at Enterprise Solutions'
+      name: 'Captain James Mitchell'
+      description: 'Operations Director, SeaLink Maritime'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: 'ITFactori delivered exactly what we needed for Momix Squad—a vibrant community platform where mothers can connect and access resources. The Nuxt.js implementation is fast, beautiful, and easy to manage. Our member engagement has grown 200% since launch. Truly grateful for their work.'
+    author:
+      name: 'Sophia Martinez'
+      description: 'Co-Founder, Momix Squad'
       avatar:
         src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
         srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: 'We hired ITFactori to build Skkillo, our talent marketplace platform. They architected a full-stack solution with React and Node.js that handles thousands of users seamlessly. The modern UI and robust backend infrastructure they built have positioned us perfectly for scale. Outstanding technical execution.'
+    author:
+      name: 'David Chen'
+      description: 'CTO & Co-Founder, Skkillo'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: 'The Shopify embedded app ITFactori created for our neon signage business completely digitized our workflow. The Neon-Text Customizer and Canvas tools allow customers to design their own signs. Sales conversion increased 45% and our design team saves hours every day. Phenomenal ROI.'
+    author:
+      name: 'Rachel Thompson'
+      description: 'Owner, Signworks Custom Neon'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
+  - quote: 'ITFactori built Credenza, our fintech platform for creator credit scoring. They handled complex data analytics across multiple platforms and created intuitive financial dashboards. Their Python backend processes millions of data points daily. The technical depth and fintech knowledge they brought was invaluable.'
+    author:
+      name: 'Alex Kumar'
+      description: 'CEO, Credenza Financial'
+      avatar:
+        src: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
+        srcset: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
 faq:
   title: Frequently Asked Questions
   description: Answers to common questions about our services and process.

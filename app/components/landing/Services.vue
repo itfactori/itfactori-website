@@ -51,8 +51,6 @@ const services = [
   {
     icon: backendIcon,
     title: 'Regulatory Consultancy',
-    description:
-      'Consultancy Services (Government Affairs, B2G, B2B & B2C) - We help navigate complex regulatory landscapes & disputes with an aim to ensure that our solutions meet all necessary requirements and promote smooth business development. Expert guidance on compliance, regulatory frameworks, and industry standards. Policy formulation and regulatory compliance, with a strong focus on aligning public-sector objectives with private-sector innovation and operational needs. Policy Development & Stakeholder Engagement by playing a key role in shaping forward-looking, business-conducive regulatory policies particularly in Cyber Security, Information Technology, Digital Services, and Telecommunications. Facilitate productive collaboration between industry stakeholders and government/regulatory bodies, including regulators, Law Enforcement Agencies (LEAs), Ministry of Interior (MOI), Ministry of IT & Telecom (MoIT), and Pakistan Telecommunication Authority (PTA). Conflict/Dispute Resolution, Consensus Building to resolve complex inter-organizational conflicts and deal breaking through negotiation, mediation, and stakeholder alignment.',
     bullets: [
       'Consultancy Services (Government Affairs, B2G, B2B & B2C) - We help navigate complex regulatory landscapes & disputes with an aim to ensure that our solutions meet all necessary requirements and promote smooth business development.',
       'Expert guidance on compliance, regulatory frameworks, and industry standards. Policy formulation and regulatory compliance, with a strong focus on aligning public-sector objectives with private-sector innovation and operational needs.',

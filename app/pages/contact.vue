@@ -36,12 +36,11 @@ const regions = [
 ];
 
 const serviceOptions = [
+  { label: 'Regulatory Consultancy', value: 'regulatory-consultancy' },
   { label: 'Remote IT Resources', value: 'remote-it' },
   { label: 'Custom Software Development', value: 'custom-software' },
   { label: 'Web Development', value: 'web-dev' },
   { label: 'Mobile App Development', value: 'mobile-dev' },
-  { label: 'AR/VR', value: 'ar-vr' },
-  { label: 'Gaming', value: 'gaming' },
   { label: 'Cyber Security', value: 'cyber-security' },
   { label: 'Other IT Services', value: 'other' }
 ];
@@ -74,22 +73,40 @@ async function handleSubmit() {
   submitError.value = '';
 
   try {
-    // Simulate form submission - replace with actual API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    submitSuccess.value = true;
-    // Reset form
-    Object.assign(form, {
-      fullName: '',
-      email: '',
-      phone: '',
-      companyName: '',
-      companyUrl: '',
-      region: '',
-      services: [],
-      projectDetails: ''
+    const response = await $fetch<{ success: boolean; message?: string }>('/api/contact', {
+      method: 'POST',
+      body: {
+        fullName: form.fullName,
+        email: form.email,
+        phone: form.phone,
+        companyName: form.companyName,
+        companyUrl: form.companyUrl,
+        region: form.region,
+        services: form.services,
+        projectDetails: form.projectDetails
+      }
     });
-  } catch {
-    submitError.value = 'Something went wrong. Please try again or email us directly.';
+
+    if (response.success) {
+      submitSuccess.value = true;
+      // Reset form
+      Object.assign(form, {
+        fullName: '',
+        email: '',
+        phone: '',
+        companyName: '',
+        companyUrl: '',
+        region: '',
+        services: [],
+        projectDetails: ''
+      });
+    }
+  } catch (error: any) {
+    console.error('Form submission error:', error);
+    submitError.value =
+      error.data?.message ||
+      error.message ||
+      'Something went wrong. Please try again or email us directly.';
   } finally {
     isSubmitting.value = false;
   }

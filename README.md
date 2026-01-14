@@ -69,12 +69,18 @@ Make sure your code is pushed to a GitHub repository.
 5. Wait for DNS propagation (can take up to 48 hours, usually much faster)
 6. Netlify will automatically provision an SSL certificate via Let's Encrypt
 
-### 4. Environment Variables (if needed)
+### 4. Environment Variables
 
-If your app requires environment variables:
+The contact form requires a Resend API key to send emails:
 
-1. Go to **Site settings** → **Environment variables**
-2. Add any required variables
-3. Redeploy your site
+1. Sign up for a free account at [Resend](https://resend.com)
+2. Go to [API Keys](https://resend.com/api-keys) and create a new API key
+3. In your Netlify site dashboard, go to **Site settings** → **Environment variables**
+4. Add the following environment variable:
+   - **Key**: `RESEND_API_KEY`
+   - **Value**: Your Resend API key (starts with `re_`)
+5. Redeploy your site
+
+**Note**: For production, you'll need to verify a domain with Resend to send emails from your own domain. Until then, emails will be sent from `onboarding@resend.dev`.
 
 Your site will automatically deploy on every push to your main branch!

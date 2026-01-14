@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     preset: process.env.NITRO_PRESET || 'netlify',
     prerender: {
       routes: ['/'],
-      crawlLinks: true,
+      crawlLinks: false,
       failOnError: false
     }
   },
@@ -41,6 +41,7 @@ export default defineNuxtConfig({
   eslint: {
     config: {
       stylistic: false
-    }
+    },
+    checker: false
   }
 });

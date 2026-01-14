@@ -24,6 +24,11 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
+  runtimeConfig: {
+    resendApiKey: process.env.RESEND_API_KEY,
+    public: {}
+  },
+
   nitro: {
     preset: process.env.NITRO_PRESET || 'netlify',
     prerender: {

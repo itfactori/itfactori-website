@@ -9,8 +9,10 @@ export default defineEventHandler(async event => {
     });
   }
 
-  // Check for API key
-  const apiKey = process.env.RESEND_API_KEY;
+  // Get API key from runtime config or environment variable
+  const config = useRuntimeConfig(event);
+  const apiKey = config.resendApiKey || process.env.RESEND_API_KEY;
+
   if (!apiKey) {
     throw createError({
       statusCode: 500,

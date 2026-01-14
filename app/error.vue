@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app';
+import { navLinks } from '~/utils/links';
 
 defineProps({
   error: {
@@ -19,27 +20,8 @@ useSeoMeta({
   description: 'We are sorry but this page could not be found.'
 });
 
-const [{ data: navigation }, { data: files }] = await Promise.all([
-  useAsyncData(
-    'navigation',
-    () => {
-      return Promise.all([queryCollectionNavigation('blog')]);
-    },
-    {
-      transform: data => data.flat()
-    }
-  ),
-  useLazyAsyncData(
-    'search',
-    () => {
-      return Promise.all([queryCollectionSearchSections('blog')]);
-    },
-    {
-      server: false,
-      transform: data => data.flat()
-    }
-  )
-]);
+const navigation = ref([]);
+const files = ref([]);
 </script>
 
 <template>

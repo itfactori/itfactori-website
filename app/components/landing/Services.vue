@@ -13,7 +13,53 @@ defineProps<{
   page: IndexCollectionItem;
 }>();
 
+const expandedServices = ref<Set<string>>(new Set());
+
+const TRUNCATE_LENGTH = 150;
+
+function toggleExpand(serviceTitle: string) {
+  if (expandedServices.value.has(serviceTitle)) {
+    expandedServices.value.delete(serviceTitle);
+  } else {
+    expandedServices.value.add(serviceTitle);
+  }
+}
+
+function isExpanded(serviceTitle: string): boolean {
+  return expandedServices.value.has(serviceTitle);
+}
+
+function getTruncatedDescription(description: string): string {
+  if (description.length <= TRUNCATE_LENGTH) {
+    return description;
+  }
+  return description.substring(0, TRUNCATE_LENGTH) + '...';
+}
+
+function getTruncatedBullets(bullets: string[]): string[] {
+  return bullets.slice(0, 2);
+}
+
+function shouldShowExpandButton(service: any): boolean {
+  if (service.bullets) {
+    return service.bullets.length > 2;
+  }
+  return service.description.length > TRUNCATE_LENGTH;
+}
+
 const services = [
+  {
+    icon: backendIcon,
+    title: 'Regulatory Consultancy',
+    bullets: [
+      'Consultancy Services (Government Affairs, B2G, B2B & B2C) - We help navigate complex regulatory landscapes & disputes with an aim to ensure that our solutions meet all necessary requirements and promote smooth business development.',
+      'Expert guidance on compliance, regulatory frameworks, and industry standards. Policy formulation and regulatory compliance, with a strong focus on aligning public-sector objectives with private-sector innovation and operational needs.',
+      'Policy Development & Stakeholder Engagement by playing a key role in shaping forward-looking, business-conducive regulatory policies particularly in Cyber Security, Information Technology, Digital Services, and Telecommunications.',
+      'Facilitate productive collaboration between industry stakeholders and government/regulatory bodies, including regulators, Law Enforcement Agencies (LEAs), Ministry of Interior (MOI), Ministry of IT & Telecom (MoIT), and Pakistan Telecommunication Authority (PTA).',
+      'Conflict/Dispute Resolution, Consensus Building to resolve complex inter-organizational conflicts and deal breaking through negotiation, mediation, and stakeholder alignment.'
+    ],
+    technologies: ['Government Affairs', 'B2G', 'B2B', 'B2C']
+  },
   {
     icon: appDevIcon,
     title: 'Mobile Development',
@@ -117,9 +163,46 @@ const services = [
           </h3>
 
           <!-- Description -->
-          <p class="text-sm text-muted leading-relaxed mb-6">
-            {{ service.description }}
-          </p>
+          <div class="mb-6">
+            <div class="description-container">
+              <Transition name="expand">
+                <div
+                  v-if="service.bullets"
+                  :key="`${service.title}-${isExpanded(service.title)}`"
+                  class="transition-all duration-300 ease-in-out"
+                >
+                  <ul class="text-sm text-muted leading-relaxed space-y-2.5 pl-5">
+                    <li
+                      v-for="(bullet, idx) in isExpanded(service.title)
+                        ? service.bullets
+                        : getTruncatedBullets(service.bullets)"
+                      :key="idx"
+                      class="relative before:content-['•'] before:absolute before:-left-4 before:text-primary"
+                    >
+                      {{ bullet }}
+                    </li>
+                  </ul>
+                </div>
+                <p
+                  v-else
+                  class="text-sm text-muted leading-relaxed transition-all duration-300 ease-in-out"
+                >
+                  {{
+                    isExpanded(service.title)
+                      ? service.description
+                      : getTruncatedDescription(service.description)
+                  }}
+                </p>
+              </Transition>
+            </div>
+            <button
+              v-if="shouldShowExpandButton(service)"
+              @click="toggleExpand(service.title)"
+              class="mt-2 font-mono text-xs text-primary hover:text-primary/80 transition-colors underline cursor-pointer"
+            >
+              {{ isExpanded(service.title) ? 'See less' : 'See more' }}
+            </button>
+          </div>
 
           <!-- Technologies -->
           <div class="flex flex-wrap gap-2">
@@ -144,5 +227,39 @@ const services = [
 
 .dark .service-icon {
   filter: invert(1);
+}
+
+.expand-enter-active {
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+.expand-leave-active {
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+
+.expand-enter-from {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-10px);
+}
+
+.expand-enter-to {
+  opacity: 1;
+  max-height: 1000px;
+  transform: translateY(0);
+}
+
+.expand-leave-from {
+  opacity: 1;
+  max-height: 1000px;
+  transform: translateY(0);
+}
+
+.expand-leave-to {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-10px);
 }
 </style>
